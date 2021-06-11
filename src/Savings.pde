@@ -14,7 +14,8 @@ class Savings{
     for (int i = 0 ; i < lines.length; i++) {
       String[] line = split(lines[i], "="); // finding property and value in the file from current line
       for (int k = 0; k < properties.length; k++){
-        if(line[0].equals(properties[k])) values[k] = line[1]; // if property is found in the current instance of class that is the same as property in the file, we change instance's value to the one from the file 
+        if(line[0].equals(properties[k])) values[k] = line[1]; // if property is found in the current instance of class that is the same as property in the file,
+        // we change instance's value to the one from the file 
       }
     }
   }
